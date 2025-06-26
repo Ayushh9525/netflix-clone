@@ -1,4 +1,4 @@
-
+/* 
 .faq-container {
     max-width: 700px;
     margin: auto;
@@ -45,5 +45,76 @@
 
   .faq.active .faq-body {
     max-height: 500px; /* enough space */
+   
+  
+  .faq-container {
+    margin-top: 45px;
+    max-width: 1155px;
+    position: relative;
+   left: 140px;
+    /* top: 15px; */
+    /* width: 500px; */
+    /* margin: 40px auto; */
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .faq {
+    background-color: #303030;
+    margin-bottom: 8px;
+    border-radius: 2px;
+
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .faq-header {
+    padding: 24px 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .faq-header::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    font-size: 32px;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq.active .faq-header {
+    background-color: #444;
+  }
+  
+  .faq.active .faq-header::after {
+    content: "×";
+    transform: rotate(0deg);
+  }
+  
+  .faq-body {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #303030;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 20px;
+    color: white;
+    font-size: 24px;
+    font: 400;
+    line-height: normal;
+  }
+  
+  .faq.active .faq-body {
+    max-height: 500px;
     padding: 20px;
   }
+  
+  .faq-body p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
