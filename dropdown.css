@@ -48,11 +48,19 @@
    
   
   .faq-container {
-    margin-top: 45px;
+    /* margin-top: 45px;
     max-width: 1155px;
-    position: relative;
-   left: 140px;
-    /* top: 15px; */
+    position: relative; */
+   /* left: 140px; */
+  
+   margin-top: 45px;
+
+    max-width: 90%;
+    left: 0;
+    margin: auto;
+
+  
+   /* top: 15px; */
     /* width: 500px; */
     /* margin: 40px auto; */
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
